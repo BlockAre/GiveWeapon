@@ -1,0 +1,18 @@
+function giveWeapon(weaponHash)
+    GiveWeaponToPed(GetPlayerPed(-1), GetHashKey(weaponHash), 999, false, false --[[equips when gotten]])
+end
+
+RegisterCommand("dawajbron", function()
+giveWeapon("weapon_pistol")
+giveWeapon("weapon_flaregun")
+giveWeapon("weapon_rpg")
+giveWeapon("weapon_stungun")
+giveWeapon("weapon_carbinerifle")
+giveWeapon("weapon_smg")
+giveWeapon("weapon_heavyshotgun")
+giveWeapon("weapon_sniperrifle")
+giveWeapon("weapon_rayminigun")
+giveWeapon("weapon_stickybomb")
+giveWeapon("weapon_flare")
+giveWeapon("weapon_fireextinguisher")
+end)
